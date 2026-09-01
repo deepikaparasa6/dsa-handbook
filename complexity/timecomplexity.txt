@@ -1,0 +1,63 @@
+-- TIME COMPLEXITY:
+
+if you have two codes - code1 and code2
+and code1 takes 15 sec of time to run 
+and code2 takes more than 15 sec to run then we say code1 is better than code2 because
+we measured it wrt time.
+this is called time complexity
+the interesting thing is we dont measure it in time.
+"It is measured in no.of operations that it takes to complete something."
+
+similarly, two codes 
+code1 - runs fast and takes a lot of space
+code2 - runs a lils low and takes lil less space
+and if we compare space, code2 is said to be better
+
+
+--Big O , Omega, Theta
+suppose, in a list of items u want to search an element,u check every element from starting
+1 2 3 4 5 6 7
+if u want 1, that is one operation, best case -> omega
+if u want 7, that is worse case scenario, we have to iterate entire list to find 7 -> Omicron(O)
+4 is avg case -> theta(0)
+
+
+-- TYPES OF COMPLEXITIES:
+
+Big O Basic Concepts:
+O(1): Constant Time
+    Doesn't depend on the size of the data set.
+    Example: Accessing an array element by its index.
+O(log n): Logarithmic Time
+    An algorithm runs in O(log n) time when every step reduces the 
+    problem size by a constant factor, most often by half.
+    This means the amount of work grows very slowly, even when 
+    the input becomes massive.
+    Example: Binary search.
+O(n): Linear Time
+     Directly proportional to the data set size.
+     If the input doubles, the number of operations also doubles.
+     Example: Looping through an array.
+O(n log n): Linearithmic Time
+     Splits and sorts or searches data.
+     Example: Merge sort, quick sort.
+O(n2): Polynomial Time
+    Nested loops for each power of n.
+    Example: Bubble sort (O(n2)).
+O(2^n): Exponential Time
+    Exponential time algorithms usually appear when we try to solve a problem 
+    by checking every possible combination, often through brute force 
+    or backtracking.
+    Think of it as the opposite of binary search. 
+    Instead of eliminating half the work at each step, you double the work with each extra input element.
+
+--TIME COMPLEXITY ANALYSIS
+
+Complexity	    Name	    What happens when the input doubles
+O(1)	    Constant	    Nothing, the work stays the same
+O(log n)    Logarithmic	    Adds just one more step
+O(n)	    Linear	        The work doubles
+O(n log n)  Linearithmic	A bit more than doubles
+O(n²)	    Quadratic	    The work quadruples
+O(2ⁿ)	    Exponential	    The work squares
+O(n!)	    Factorial	    The work grows faster than anything above
