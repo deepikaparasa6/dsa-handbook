@@ -1,0 +1,5 @@
+You have one operation
+Even if you have million operations, it becomes O(1)
+It is called constant 
+It means:
+as n increases, the no.of operations is constant
