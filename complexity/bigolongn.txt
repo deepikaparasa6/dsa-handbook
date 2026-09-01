@@ -1,0 +1,40 @@
+consider items 
+1 2 3 4 5 6 7 8
+logn works only with SORTED DATA 
+here we work an efficient way to find a number in the list
+So we're going to look for the number one.
+
+And of course we're not going to know where it is in the list.
+
+We have to find the most efficient way that would work for finding any number.
+
+So this is what we're going to do.
+
+We're going to take the list.
+
+1. We're going to cut it in half and say is it in the first half or is it in the second half.
+it's not in the second half.
+
+So we can remove that.
+
+2. And now we only have to search through this many numbers and then we'll do it again.
+
+It's not in the second half.
+
+3. And we can remove those.
+
+And we do it a third time.
+
+And we find the number that we're looking for.
+
+So let's bring all of these numbers back and count how many steps we had to find the item that we were
+
+so we did it 3 times to find the required number 1. (i have marked as 1 2 3)
+we have 8 items and we took 3 steps to find it
+
+Two to the third power equals eight is the same as saying - 2^3 = 8
+log sub two of eight equals three. - log 8 base 2  = 3
+
+On graph it is efficient, but def not efficient like O(1)
+
+Binary search is an Example for this
