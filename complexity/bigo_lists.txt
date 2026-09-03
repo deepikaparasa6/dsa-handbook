@@ -1,0 +1,17 @@
+list is a built in DS so it is easy to analyze 
+consider a list 
+11 3 23 7
+0 1 2 3 --index
+to add/append an element -> 27
+new list -> 11 3 23 7 27
+We don't have to do any reindexing of any of these 
+items all the way down the list.
+
+Now let's take a look at taking that same item and removing it with a pop.
+
+Once again, when we remove that, there is no 
+reindexing all the way down the line.
+
+All we have to do is add or remove when we do an append or a pop.
+
+So that is O of one.
