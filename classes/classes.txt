@@ -64,3 +64,30 @@ It is a different cookie.
 We're going to pass this one.
 The color blue itself is blue different cookie.
 So that is our constructor to be able to create new cookies.
+
+
+WE HAVE MANY METHODS TO DO 
+And our first method we're going to call get color.
+It has that self keyword in there.
+And if all it has is self that means there 
+are no arguments passed to this.
+It's just going to return the color 
+for the particular cookie that you're calling this on.
+And then the other method is going to be 
+called set color this when you pass it a color and it will
+change the color of that particular cookie okay.
+So we're going to go run this code in VS code
+because this is all code that we can run.
+And we're going to create our two new cookies like this okay.
+
+class Cookie:
+    def __init__(self,color):
+        self.color = color 
+    def get_color(self):
+        return self.color
+    def set_color(self):
+        self.color = color
+Cookie_one = Cookie('green')
+Cookie_two = Cookie('blue')
+print("Cookie one color: ",Cookie_one.get_color())
+print("Cookie two color: ",Cookie_two.get_color())
