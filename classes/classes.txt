@@ -1,0 +1,66 @@
+Classes are an incredibly important topic because 
+every data structure that we're going to create is going to be 
+created using classes.
+
+So what is a class?
+There are built in cookie cutters so to speak, 
+in Python where you can create an integer, you can create strings.
+
+And when you create a class you are creating your own data type.
+
+we're going to create a class and we're going to call it cookie.
+You're going to want Python to do particular things.
+When you create a new cookie.
+And you do that with what is called a constructor 
+and it has a particular syntax, it looks like this.
+class Cookie:
+    def __init__(self,color):
+        self.color = color
+
+So it starts out looking like a function with the def on there.
+And then it's double underscore init.Or some people say init.
+But to initialize this and then another double underscore.
+And one of the things that is going to be different about a 
+method than a function is the self keyword.
+If it has self in there, it is a method that is part of a class.
+And we'll talk a little bit more about that self keyword 
+as we are going through this example.
+And then there is the parameter color in this case.
+And what we're going to do with that is 
+color is what this variable is here.
+So if you pass this the color green it gets passed to here.
+And self dot color applies to the specific 
+instance of color that we're creating.
+So we would create a new cookie like this.
+
+class Cookie:
+    def __init__(self,color):
+        self.color = color
+Cookie_one = Cookie('green')
+
+So we'll say cookie one equals cookie 
+and then we'll pass it the color green.
+So cookie one is the variable name.
+Just like if you had a variable and you set it equal to 
+an integer or a string, but instead of an integer
+or a string, we are setting it to be the type cookie, 
+and we're passing it the color green.
+This gets passed to the constructor and that creates a green cookie.
+So now it makes it a little easier to describe this self keyword.
+This particular instance of cookie, this one here that is 
+called cookie one itself is green.
+And this will make even more sense when we create another cookie.
+
+class Cookie:
+    def __init__(self,color):
+        self.color = color
+Cookie_one = Cookie('green')
+Cookie_two = Cookie('blue')
+
+We're going to call this one cookie two.
+And we're going to say that this one is blue.
+So cookie two different variable.
+It is a different cookie.
+We're going to pass this one.
+The color blue itself is blue different cookie.
+So that is our constructor to be able to create new cookies.
