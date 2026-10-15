@@ -10,3 +10,6 @@ Then we're also going to have tail point to the last item. -> which is 7 in this
 
 And then each node points to the next to the next to the next. -> it has arrows 
 And the last one is just going to point to none.
+And because these are all in a contiguous place in memory, this is why we can have indexes and access
+
+those indexes O of one, because we can map each one of these indexes to a specific address in memory.
