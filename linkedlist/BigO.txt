@@ -1,0 +1,32 @@
+So I'm going to start by bringing up a linked list.
+We have our head and our tail.
+
+11 -> 3 -> 23 -> 7 -> None
+head             tail
+
+And our first method is going to be to append a new node to the end of the list. ===> node: 4 -> None
+ 
+the result or the imagination ===> the tail that is pointing to 7 should shift to 4 and the 7 which is pointing to None should 
+be done by 4 i.e the 4 should be pointing to None 
+
+imagination output: 11 -> 3 -> 23 -> 7 -> 4 - > None
+                    head                  tail
+THIS IS O(1)
+The reason being, it doesn't matter how many nodes we have in the list, the number of operations to
+add it to the end is exactly the same.
+
+----------------------------------------------------------------------------------------------------------------------------------
+But when we are removing from the end of a linked list, it's more complicated than that.
+for the same linked list: 11 -> 3 -> 23 - > 7 -> 4 -> None
+if we have to remove the node 4 and make 7 as the last node,
+In order to have tail point to that last node, we have to have that pointer there be set equal to something else that is pointing 
+at that node.
+Remember these are all just pointers.
+So we have to set it equal to another pointer.
+
+PROCESS:
+So in order to get to that node, we have to start at the head, iterate through the list until we get
+to that pointer.
+Then we can set tail equal.
+To that pointer and that points it at the seven node.
+But because we had to iterate through the entire list, this is O(n).
