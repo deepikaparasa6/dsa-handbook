@@ -1,0 +1,12 @@
+So the first difference is that a linked list does not have indexes.
+eg:
+head -> 11 -> 3 -> 23 -> 7 -> None
+this is a linked list
+and
+So also with a linked list we have a variable called head.
+And it points to the first node in the list. -> which is 11 in this case
+
+Then we're also going to have tail point to the last item. -> which is 7 in this case
+
+And then each node points to the next to the next to the next. -> it has arrows 
+And the last one is just going to point to none.
