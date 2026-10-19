@@ -48,17 +48,16 @@ So that is O of one.
 
 ----------------------------------------------------------------------------------------------------------------------------------
 removing the node at the front
+the list is: 4 -> 11 -> 3 -> 23 -> 7 -> None
+            head                  tail
+after removing node 4 we need the output list as:
+11 -> 3 -> 23 -> 7 -> None
+head             tail
 
 Now let's look at removing that four node.
-
 The first thing we need to do is have head point at that 11 node.
-
 We can do that by saying head is equal to head dot next.
-
 And that moves that over.
-
 And then we remove that item from the linked list.
-
 Once again this is going to be O of one because it doesn't matter how many items we have in the list,
-
 it's the same number of operations to remove that.
