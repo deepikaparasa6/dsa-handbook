@@ -61,3 +61,25 @@ And that moves that over.
 And then we remove that item from the linked list.
 Once again this is going to be O of one because it doesn't matter how many items we have in the list,
 it's the same number of operations to remove that.
+
+----------------------------------------------------------------------------------------------------------------------------------
+adding a node in middle of a list
+let the original list be: 
+11 -> 3 -> 23 -> 7 -> None
+head             tail
+after adding the node 4-> None after 23,the output list is:
+11 -> 3 -> 23 -> 4 -> 7 -> None
+head                  tail
+
+Let's say we're going to insert that for after the 23 node.
+In order to find that node, we have to start at the head and iterate through the list until we get
+to that 23 node.
+Now we want the for to point at that seven node.
+And this pointer here is pointing at the seven.
+So we'll set the pointer from the four equal to that.
+That points it there.
+We have that 23 node point to the new node.
+And that adds that into the linked list.
+But because we had to iterate through the list this is O of n.
+
+----------------------------------------------------------------------------------------------------------------------------------
