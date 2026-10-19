@@ -38,19 +38,12 @@ node = 4->None
 so the output list should be: 4 -> 11 -> 3 -> 23 -> 7 -> None
                               head                  tail
 So we're going to add an item to the front.
-
 We need to have that four point to the 11 node.
-
 The head points to the 11, so we'll have the next pointer from four be set equal.
-
 To head, and that points it at that node and that we have head point at the new node.
-
 And that adds it into the list.
-
 It doesn't matter how many items we have in the list, it's going to be the same number of operations
-
 to add an item on the front of the list.
-
 So that is O of one.
 
 ----------------------------------------------------------------------------------------------------------------------------------
