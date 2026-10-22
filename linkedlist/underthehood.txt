@@ -17,3 +17,28 @@ Both of these together make up the node.
 So still what is it?
 It's essentially a dictionary.
 Where value is four and next is equal to none. ====>>>> {"value": 4, "next": None}
+
+but to understand clearly about the nodes and esp the dictionary
+we can expand it in the form of dictionary as follows:
+
+head = { "value": 11,
+         "next" : { "value" : 3,
+                      "next" : { "value": 23,
+                                  "next" : { "value" : 7,
+                                              "next" : None         
+
+                                            } 
+                                
+                                }
+
+                    }
+        }
+
+
+print(head['next']['next']['value']) --> the output goes as 23
+because head = none
+head.next = 11
+head.next.next = 3
+and value = 23 (3's next)
+
+
