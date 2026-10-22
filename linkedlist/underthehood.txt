@@ -1,0 +1,19 @@
+So we're going to start with our diagram like this.
+
+11 - > 3 -> 23 -> 7 - > None
+head              tail
+new node => 4 - > None
+when we add this node to the list it becomes:
+11 -> 3 -> 23 -> 7 -> 4 -> None
+head                  tail
+
+And when we append an item when we say this is equal to this and tail points to this, and we add this
+into the list, what is really going on to make that happen?
+So to understand that, you have to understand first what the node is.
+
+So first of all the node is all of this.
+It is not only the value, it is also the pointer.
+Both of these together make up the node.
+So still what is it?
+It's essentially a dictionary.
+Where value is four and next is equal to none. ====>>>> {"value": 4, "next": None}
