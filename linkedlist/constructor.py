@@ -10,12 +10,12 @@ class LinkedList: #capital letter says that we are creating a class
         self.tail = new_node #assigns the tail property to the new_node
         self.length = 1 #assigns the length property to 1, since we have one node in the linkedlist
 
-    def append(self,value): #creates a new node and appends it to the end of the linkedlist
-    def prepend(self,value): #creates a new node and prepends it to the beginning of the linkedlist
-    def insert(self,index,value): #creates a new node and inserts it at the specified index in the linkedlist
+    # def append(self,value): #creates a new node and appends it to the end of the linkedlist
+    # def prepend(self,value): #creates a new node and prepends it to the beginning of the linkedlist
+    # def insert(self,index,value): #creates a new node and inserts it at the specified index in the linkedlist
        
 my_linked_list = LinkedList(4) #creates a new linkedlist with a value of 4
-
+print(my_linked_list.head.value) #prints the value of the head node, which is 4
 
 ''' 
 So the constructor it is going to create a node.
