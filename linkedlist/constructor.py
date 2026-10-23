@@ -9,12 +9,17 @@ class LinkedList: #capital letter says that we are creating a class
         self.head = new_node #assigns the head property to the new_node
         self.tail = new_node #assigns the tail property to the new_node
         self.length = 1 #assigns the length property to 1, since we have one node in the linkedlist
-
+    def print_list(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.value)
+            temp = temp.next
     # def append(self,value): #creates a new node and appends it to the end of the linkedlist
     # def prepend(self,value): #creates a new node and prepends it to the beginning of the linkedlist
     # def insert(self,index,value): #creates a new node and inserts it at the specified index in the linkedlist
        
 my_linked_list = LinkedList(4) #creates a new linkedlist with a value of 4
+my_linked_list.print_list() #prints the linkedlist, which contains one node with a value of 4
 print(my_linked_list.head.value) #prints the value of the head node, which is 4
 
 ''' 
